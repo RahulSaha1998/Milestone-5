@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <h1 class=" text-center text-5xl pb-5">Monthly Expense </h1>
+
+    <section class="container mx-auto flex justify-center gap-10">
+        <div>
+            <img src="/money-master.png" alt="">
+        </div>
+        <div class="bg-gray-100 text-center p-10">
+            <div>
+                <h3 class="text-2xl p-1">Income</h3>
+                <p class="inline    p-1"> income :</p>
+                <input id="total" class="      p-1" type="number">
+               
+            </div>
+            <div>
+                <h3 class="text-2xl p-1">Expenses</h3>
+                <p class="inline    p-1">Food:</p>
+                <input id="eFood" type="number"   >
+            <div>
+
+            </div>
+                <p class="inline m-1 " >Rent:</p>
+                <input id="eRent"  class="  m-1" type="number">
+                
+            </div>
+            <div>
+                <p class="inline" >Clothes:</p>
+                <input id="eC" type="number">
+            </div>
+            <div class="p-2">
+                <button id="calculate" class="p-2 bg-blue-500 rounded text-white hover:bg-blue-900"> Calculate</button>
+                <h1 class="text-2xl">Total Expenses: <span id="tE">0000</span></h1>
+                <h1 class="text-2xl">Balance: <span id="balance">0000</span></h1>
+
+            </div>
+            <div class="flex gap-3">
+                <h3>Save:</h3>
+                <input id="percentage" type="number">
+                <h3>%</h3>
+                <button id="save" class="p-2 bg-blue-500 rounded hover:bg-blue-900">Save</button>
+            </div>
+            <div>
+                <h1 class="text-2xl">Saving Amount: <span id="sA">0000</span></h1>
+                <h1 class="text-2xl">Remaining Amount: <span id="ra">0000</span></h1>
+            </div>
+            
+
+        
+            
+        </div>
+
+    </section>
+
+    <script src="javascript/utilitis.js"></script>
+    <script src="javascript/total.js"></script>
+</body>
+</html>
